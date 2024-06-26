@@ -1,0 +1,724 @@
+/**ESTILOS GENERALES**/
+*{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+
+/**ESTRUCTURA GENERAL**/
+
+/**index.html**/
+
+
+header {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color:white;
+  }
+
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 2em;
+  }
+
+  section {
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+	gap: 1.5em;
+	align-items: center;
+  }
+
+  footer{
+	
+	display:flex;
+	justify-content:space-evenly;
+	align-items: center;
+	
+	
+	
+ }
+
+ /**lugares.html **/
+
+ section2#lugares {
+	display: 	grid; 
+	grid-template-columns:	1fr 1fr 1fr; 
+    grid-template-rows: 	1fr 1fr 1fr; 
+	gap: 	10px; 
+	grid-template-areas: 
+			"area1 area2 area3"
+			"area4 area5 area6"; 
+	width: 90%; 
+	height: 600px;   
+	margin:0 auto;
+	background-color: azure;
+    gap: 10px; 
+	
+  }
+
+  section2#lugares div{
+	display: grid;
+	justify-content: center; /* Alinear al centro horizontalmente */
+    align-items: center; /* Alinear al centro verticalmente */
+
+  }
+
+  .area1{
+	grid-area: area1;
+  }
+  .area2{
+	grid-area: area2;
+  }
+  .area3{
+	grid-area: area3;
+  }
+  .area4{
+	grid-area: area4;
+  }
+  .area5{
+	grid-area: area5;
+  }
+  .area6{
+	grid-area: area6;
+  }
+
+ /**eventos.html **/
+
+ section#section3 {
+	display: 	grid; 
+                grid-template-columns:	1fr 1fr 1fr; 
+				grid-auto-rows: 50%; /* Altura del 50% del contenedor */
+                /* grid-template-rows: 	1fr 1fr 1fr;  */
+                gap: 	1px; 
+                grid-template-areas: 
+                "ar1 ar1 ar1"
+                "ar2 ar3 ar4";
+                /* "ar5 ar6 ar7 ";  */
+                width: 80%;     
+				height:50%;        
+                background-color: azure;
+                padding: 2em;
+                row-gap: 15px;
+				column-gap:10px;
+				justify-items: center;
+                margin: 0 auto;
+				
+  }
+
+  
+  .ar1 { 
+	grid-area: ar1; 
+	width:80%;
+	
+}
+
+
+
+.ar2 { 
+	grid-area: ar2; 
+	
+}
+
+.ar3 { 
+	grid-area: ar3; 
+	
+}
+
+.ar4 { 
+	grid-area: ar4; 
+	
+}
+
+
+/*** opiniones.html ***/
+
+main#reviews{
+	display: flex;
+	column-gap: 2%;
+}
+
+#contacto{
+	display: flex;
+	justify-content: space-evenly;
+	padding: .5em 0;
+
+}
+
+/**FORMATEO GENERAL**/
+  
+body {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		
+  }  
+
+header h1 a:hover{
+	opacity:.6;
+}
+
+  nav{
+	padding-right: .5em;
+  }
+
+ 
+  nav li {
+	text-align: center;
+  }
+  
+  nav a {
+	display: block;
+	padding: .6em;
+	background-color: #eee;
+	color: #333;
+	text-decoration: none;
+	border-radius: 5px;
+  }
+  
+  nav a:hover {
+	background-color: #333;
+	color: #fff;
+  }
+  
+  main {
+	padding: 1.2em;
+  }
+  
+     
+  footer {
+	background-color: #cecaca;
+	padding: 1em 0;
+	text-align: center;
+	margin-top:1em;
+  }
+
+  footer p{
+	line-height: 1.5em;
+	
+  }
+
+  div#contacto {		
+		
+		padding: 1em 0;
+  }
+
+ 
+
+
+
+  /**index.html**/
+
+  section#principal{
+	width:85%;
+	margin:0 auto;
+	padding:1em;
+		
+  }
+  
+  header h1 {
+	
+	padding:.5em;
+	text-align: center;
+	
+  }
+
+  section#principal h2 {
+	font-size: 2em;
+	margin-top:1em;
+	text-align: center;
+	line-height: 1.1em;
+	color: #009DDA;
+	font-weight: bolder;
+	
+  }
+
+  section#principal p {
+	line-height: 1.3em;
+	font-size: 1.2em;
+	
+  }
+
+  section#principal figure{
+	background-color:antiquewhite;
+	padding:1em;
+	margin:1em;
+  }
+
+  section#principal figure:hover{
+	opacity: .7;
+  }
+
+  section#principal figure img{
+	width: 100%;
+	padding:.5em;		
+  }
+
+  section#principal figure figcaption{
+	text-align: right;	
+	font-size: 0.9em;
+	width: 97%;
+	margin:.5em;	
+	}
+
+  section#principal figure figcaption span{
+	font-style: italic;
+	margin-left: 0.5em;
+	line-height: 1.1em;	
+  }
+
+.img1:hover{
+	opacity:0.6;
+}
+
+
+.img2:hover{
+	opacity:0.6;
+}
+
+
+  /**lugares.html**/
+
+  h1#descubre{
+	text-align: center;
+	font-size: 2.2em;
+	padding:1em;
+	color:#009DDA;	
+	font-weight: bolder;
+  }
+
+  section2#lugares{
+	padding-bottom:2em;
+	background-color: azure;
+  }
+
+  section2#lugares div:hover{
+	opacity:0.7;
+  }
+
+  section2#lugares h3{
+	text-align: center;
+	padding:1em;
+  }
+
+ 
+
+
+  /**proyecto.html**/
+ 
+  #acerca_de{
+	width:80%;	
+	margin: 0 auto;
+	font-size: 2.2em;	
+	margin-bottom: 1em;
+	margin-top: 1em;
+	line-height: 1.2em;
+  }
+
+  h2#acerca_de{
+	color:#009DDA;	
+	font-weight: bolder;
+	text-align: center;
+  }
+  
+  h2#acerca_de span{
+	color:brown;
+  }
+
+  section#autor{
+	width:60%;
+	margin: 0 auto;
+	background-color: bisque;
+	
+  }
+
+  section#autor:hover{
+	opacity: 0.7;
+  }
+
+ 
+  section#autor p {
+	line-height: 1.3em;
+	font-size: 1.2em;
+	text-align: left;
+	padding:1em;
+	margin: 0 1em;
+	color:brown;
+	
+  }
+  section#autor figure {
+	margin:0 auto;	
+	padding: 2em;
+	background-color:bisque;
+	width:100%;
+  }
+
+  section#autor figure img#autor{
+	width: 100%;
+	margin:0 auto;
+  }
+
+  section#autor figure figcaption{
+	text-align: right;	
+	font-size: 0.9em;
+	width: 100%;
+  }
+
+  section#autor figure figcaption span{
+	font-style: italic;
+	
+  }
+
+  #flyer{
+	color:brown;
+	text-align: left;
+  }
+
+  
+  /**eventos.html**/
+
+ h2#eventos{
+	text-align: center;
+	font-size: 2.2em;
+	padding:1em;
+	color:#009DDA;	
+	font-weight: bolder;
+ }
+
+ section#section3 p{
+	text-align: center;
+	padding: 1em;
+ }
+
+ section#section3 div:hover{
+	opacity:0.7;
+ }
+
+
+  /**opiniones.html**/  
+
+  main#reviews{
+	width:90%;	
+	margin: 0 auto;
+	margin-top:1em;
+	
+  }
+
+
+	main#reviews h2{
+		font-size: 2em;
+		color:#009DDA;	
+		font-weight: bolder;
+		text-align: center;
+		padding-bottom: 1em;
+		}
+
+
+main#reviews p img{
+	width:100px;
+	height: 75px;
+	display: block; 
+    margin: 0 auto; 
+}
+
+
+  main#reviews p{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: rgb(177, 38, 38);	
+	line-height: 1.2em;
+	margin-bottom: .5em;
+		
+  }
+
+ 
+  main#reviews p + br{
+	font-style: italic;
+  }
+
+
+  
+  main#reviews p span{
+	font-style: italic;
+	line-height: 1.2em;
+	font-weight: normal;
+	color: black;
+	
+  }
+
+  /****MEDIA QUERIES****/
+@media (max-width: 1024px){
+
+	/***Estilos generales***/
+
+	header {
+		grid-template-columns: 2fr;
+		
+	  }
+	
+	  nav ul {
+		
+		grid-template-columns:  1fr;
+		
+	  }
+	  
+  section {	
+
+	grid-template-columns: 2fr;
+	gap:1%;
+
+  }
+
+  
+  form#boton input{    
+    font-size: .8em; 
+	width:90%;
+	margin:1em;
+	} 
+
+  /***index.html***/
+
+  section#principal{
+	width:100%;
+	margin:0;
+	
+  }
+
+  section#principal h2 {
+	font-size: 1.8em;
+	text-align: center;
+	margin-bottom: .5em;
+	
+	
+  }
+
+  section#principal figure{
+	padding:.2em;
+	margin:.2em;
+  }
+  section#principal figure figcaption{	
+	font-size: 0.8em;
+	width:90%;	
+	
+	}
+	#imagenes{
+		margin-bottom: .5em;
+	}
+
+	/**lugares.html**/
+	
+	section2#lugares {
+		display: inline-block;
+		width:100%;
+		margin:0 auto;
+				
+	}
+		
+	section2#lugares img {
+		
+		width:80%;		
+				
+	}
+
+	.area1 img {
+		display: block;
+		margin: 0 auto; 
+		
+	}
+		
+
+	
+	.area2 img {
+		
+		display: block;
+		margin: 0 auto; 
+	}
+
+	.area3 img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.area4 img {
+		display: block;
+		margin: 0 auto; 
+	}
+
+	.area5 img {
+		display: block;
+		margin: 0 auto; 
+	}
+
+	.area6 img {
+		display: block;
+		margin: 0 auto; 
+	}
+
+	section2#lugares h1{
+		text-align: center;
+		margin:0 auto;		
+		margin-top:.5em;
+	}
+	section2#lugares h2 {
+		margin-top: 0;
+	}
+	section2#lugares figure {
+		margin-top: 0.7em;
+	}
+
+	section2#lugares img{
+		height:70%;
+		
+	}
+
+	/**proyecto.html**/
+
+	section#autor{
+		width:90%;
+		padding-bottom:.5em;
+		
+	  }
+	  #acerca_de{
+		width:80%;	
+		text-align: center;
+		font-size: 1.8em;
+	  }
+
+	/**eventos.html**/
+
+	section#section3{
+		display: inline-block;
+		width:100%;
+		gap:3%;	
+				
+	}	
+
+	.ar1{
+		
+		width:100%;
+		margin: 0 auto;
+	}
+
+	.ar2 img{
+		display:block;
+		margin: 0 auto;
+		width:100%;
+	}
+
+	.ar3 img{
+		display:block;
+		margin: 0 auto;
+		width:100%;
+	}
+
+	.ar4 img{
+		display:block;
+		margin: 0 auto;
+		width:100%;
+	}
+
+	 #eventos h2{
+		margin: 0 auto;
+		margin-top:.5em;
+		text-align: center;
+		line-height: 1.1em;
+	  }
+
+	  /**Pag. Opiniones**/
+
+	  
+	main#reviews{
+		flex-flow: column nowrap;
+	}
+
+	main#reviews h2{
+		font-size: 1.8em;
+	}
+
+	
+	
+}
+
+@media (min-width: 1024px) and (max-width: 1280px){
+
+	section#autor{
+		width:80%;
+	}
+
+	section#section3{
+		display:inline-block;
+		margin:0 auto;
+		width:100%;
+		
+	}
+	
+	.ar1{		
+		display:block;
+		margin: 0 auto;
+		width:90%;
+		
+		
+	}
+
+	
+	.ar2 img{
+		display:block;
+		margin: 0 auto;
+		width:90%;
+		
+		
+	}
+
+	.ar3 img{
+		display:block;
+		margin: 0 auto;
+		width:90%;
+		
+		
+	}
+
+	.ar4 img{
+		display:block;
+		margin: 0 auto;
+		width:90%;
+		
+		
+	}
+
+	main#reviews{
+		display:flex;
+	}
+
+		
+}
+
+
+@media (min-width: 1920px){
+	
+	section#principal p{
+		font-size: 1.3em;
+	}
+	
+	section#autor p{
+		font-size: 1.4em;
+	}
+
+	main#reviews{
+		font-size: 1.15em;
+	}
+}
+
+ 
+  
+
+
+ 
